@@ -1,1 +1,1 @@
-web: gunicorn WEBAPP.wsgi
+web: gunicorn LANPAGE.wsgi
