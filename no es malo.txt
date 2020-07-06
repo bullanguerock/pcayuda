@@ -1,0 +1,10 @@
+Nombre
+telefono
+email
+ciudad/comuna
+presupuesto*
+necesidades*
+notebook/pc
+comprar/remodelacion/upgrade
+
+

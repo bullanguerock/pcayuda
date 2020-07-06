@@ -1,0 +1,82 @@
+{done}	Port template
+{done}	static-css
+{done}	media-images, ect
+	
+{done}replace old shit with our necesity
+	-redirections
+	-brand
+{done}fomulario
+	 -database
+	  
+{	}email service
+{       }dashboard
+
+
+
+{	}create a setup thing
+{	}create a deploy thing
+{	}creater a requeriments thing
+{	}creater a redame
+{	}creater a license shit
+
+pass aws totito    +${m*9CQ2Y(j
+
+
+
+STRUCTURE EXAMPLE
+mysite/                   # Project
+    conf/
+        locale/
+            en_US/
+            fr_FR/
+            it_IT/
+    mysite/
+        __init__.py
+        settings.py
+        settings_dev.py
+        settings_production.py
+        urls.py
+        wsgi.py
+    static/
+        admin/
+            css/           # Custom back end styles
+        css/               # Project front end styles
+        fonts/
+        images/
+        js/
+        sass/
+    staticfiles/
+    templates/             # Project templates
+        includes/
+            footer.html
+            header.html
+        index.html
+    myapp/                 # Application
+        core/
+        migrations/
+            __init__.py
+        templates/         # Application templates
+            myapp/
+                index.html
+        static/
+            myapp/
+                js/  
+                css/
+                images/
+        __init__.py
+        admin.py
+        apps.py
+        forms.py
+        models.py
+        models_foo.py
+        models_bar.py
+        views.py
+    templatetags/          # Application with custom context processors and template tags
+        __init__.py
+        context_processors.py
+        templatetags/
+            __init__.py
+            templatetag_extras.py
+    gulpfile.js
+    manage.py
+    requirements.txt
