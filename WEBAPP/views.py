@@ -7,7 +7,16 @@ from .models import Cliente
 
 # Create your views here.
 def index(request):
+    if request.method == "POST":
+        form = CustomerForm(request.POST)
+        if form.is_valid():
+            cliente = form.save(commit=False)
+            cliente.save()
+            return redirect('form2', pk=cliente.pk)
+    else:
+        form = CustomerForm()
     return render(request,'WEBAPP/index.html')
+    
 
 def terms(request):
     return render(request,'WEBAPP/terms-conditions.html')
