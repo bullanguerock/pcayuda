@@ -46,6 +46,7 @@ Colors:
 /******************************/
 /*     01. General Styles     */
 /******************************/
+
 body,
 html {
     width: 100%;
@@ -53,7 +54,7 @@ html {
 }
 
 body, p {
-	color: #787976; 
+	color: #787976;
 	font: 400 1rem/1.5625rem "Open Sans", sans-serif;
 }
 
@@ -259,7 +260,7 @@ strong {
 }
 
 /* IE10+ hack to solve lower label text position compared to the rest of the browsers */
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
 	.label-control {
 		top: 0.9375rem;
 	}
@@ -298,7 +299,7 @@ strong {
 }
 
 /* IE10+ hack to solve lower label text position compared to the rest of the browsers */
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
 	.form-control-input {
 		padding-top: 1.25rem;
 		padding-bottom: 0.75rem;
@@ -367,7 +368,7 @@ input[type='checkbox'] {
 }
 
 /* IE10+ hack to raise checkbox field position compared to the rest of the browsers */
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
 	input[type='checkbox'] {
 		vertical-align: -9%;
 	}
@@ -499,17 +500,17 @@ input[type='checkbox'] {
 /* animate in */
 .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
 	opacity: 1;
-	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0); 
-	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0); 
-	transform: translateY(0) perspective(37.5rem) rotateX(0); 
+	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0);
+	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0);
+	transform: translateY(0) perspective(37.5rem) rotateX(0);
 }
 
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
 	opacity: 0;
-	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
-	-ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
-	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
+	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
+	-ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
+	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
 }
 
 /* dark overlay, start state */
@@ -596,7 +597,7 @@ input[type='checkbox'] {
 	left: 50%; /* centers the loading animation horizontally one the screen */
 	width: 3.75rem;
 	height: 1.25rem;
-	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */ 
+	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */
 	text-align: center;
 }
 
@@ -626,11 +627,11 @@ input[type='checkbox'] {
 }
 
 @keyframes sk-bouncedelay {
-	0%, 80%, 100% { 
+	0%, 80%, 100% {
 		-webkit-transform: scale(0);
 		-ms-transform: scale(0);
 		transform: scale(0);
-	} 40% { 
+	} 40% {
 		-webkit-transform: scale(1.0);
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
@@ -794,6 +795,7 @@ input[type='checkbox'] {
 .header .p-large {
 	margin-bottom: 2rem;
 	color: #dfe5ec;
+	
 }
 
 .header .btn-solid-lg {
@@ -842,7 +844,7 @@ input[type='checkbox'] {
 	-moz-transform: scale(1.15);
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
-} 
+}
 /* end of hover animation */
 
 
@@ -859,6 +861,10 @@ input[type='checkbox'] {
 	border: none;
 	text-align: center;
 
+}
+
+.card-1 .p {
+	color: #fff;
 }
 
 .cards-1 .icon-center {
@@ -885,7 +891,7 @@ input[type='checkbox'] {
 	height: 6rem;
 	background: url('../images/hexagon-green.svg') center center no-repeat;
 	background-size: 6rem 6rem;
-	
+
 }
 
 .cards-1 .fa-stack-1x {
@@ -900,18 +906,17 @@ input[type='checkbox'] {
 .cards-1 .card-title {
 	margin-bottom: 0.625rem;
 	text-align: center;
+	color: #fff;
 }
-p {
-	text-align: center;
-}
+
 
 
 /************************/
 /*     07. Services     */
 /************************/
 .cards-2 {
-	padding-top: 6.625rem;	
-	padding-bottom: 1.25rem;	
+	padding-top: 6.625rem;
+	padding-bottom: 1.25rem;
 	background-color: #fbfbfb;
 }
 
@@ -1258,9 +1263,11 @@ p {
 /*     11. Call Me    */
 /**********************/
 .form-1 {
-	padding-top: 6.625rem;	
-	padding-bottom: 5.625rem;	
+	padding-top: 6.625rem;
+	padding-bottom: 5.625rem;
 	background-color: #153e52;
+	text-align: center;
+	
 }
 
 .form-1 .text-container {
@@ -1288,11 +1295,11 @@ p {
 .form-1 .list-unstyled .media-body {
 	margin-left: 0.625rem;
 	text-align: center;
-	
+
 }
 
 .form-1 .icon-center {
-    display: block;
+  display: block;
 	margin: auto;
 	text-align:center;
 	width:50%;
@@ -1340,7 +1347,7 @@ p {
 .slidecontainer {
 	width: 100%;
   }
-  
+
   .slider-bar {
 	-webkit-appearance: none;
 	width: 100%;
@@ -1352,11 +1359,11 @@ p {
 	-webkit-transition: .2s;
 	transition: opacity .2s;
   }
-  
+
   .slider-bar:hover {
 	opacity: 1;
   }
-  
+
   .slider-bar::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	appearance: none;
@@ -1366,7 +1373,7 @@ p {
 	background: #39728f;
 	cursor: pointer;
   }
-  
+
   .slider-bar::-moz-range-thumb {
 	width: 25px;
 	height: 25px;
@@ -1374,7 +1381,7 @@ p {
 	background: #14bf98;
 	cursor: pointer;
   }
-  
+
 
 
 /************************/
@@ -1450,10 +1457,10 @@ p {
 	-moz-transform: scale(1.15);
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
-} 
+}
 /* end of hover animation */
 
-.filter .element-item .element-item-overlay { 
+.filter .element-item .element-item-overlay {
 	position: absolute;
 	z-index: 2;
 	top: 0;
@@ -1466,7 +1473,7 @@ p {
 	transition: all 0.3s;
 }
 
-.filter .element-item .element-item-overlay span { 
+.filter .element-item .element-item-overlay span {
 	position: absolute;
 	z-index: 3;
 	top: 42%;
@@ -1592,7 +1599,7 @@ p {
 	-moz-transform: scale(1.15);
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
-} 
+}
 /* end of hover animation */
 
 .basic-2 .team-member .p-large {
@@ -1844,7 +1851,7 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-	background-color: #13aa87; 
+	background-color: #13aa87;
 }
 
 
@@ -1915,10 +1922,10 @@ a:hover.back-to-top {
 
 /*****************************/
 /*     21. Media Queries     */
-/*****************************/	
+/*****************************/
 /* Min-width width 768px */
 @media (min-width: 768px) {
-	
+
 	/* General Styles */
 	.p-heading {
 		width: 85%;
@@ -1934,7 +1941,7 @@ a:hover.back-to-top {
 		box-shadow: none;
         background: transparent;
 	}
-	
+
 	.navbar-custom .navbar-brand.logo-text {
 		color: #fff;
 	}
@@ -1947,7 +1954,7 @@ a:hover.back-to-top {
 	.navbar-custom .nav-item .nav-link {
 		padding: 0.25rem 0.75rem 0.25rem 0.75rem;
 	}
-	
+
 	.navbar-custom .nav-item .nav-link:hover,
 	.navbar-custom .nav-item .nav-link.active {
 		color: #14bf98;
@@ -1966,7 +1973,7 @@ a:hover.back-to-top {
 	.navbar-custom.top-nav-collapse .nav-item .nav-link {
 		color: #fff;
 	}
-	
+
 	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
 	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
 		color: #14bf98;
@@ -1979,7 +1986,7 @@ a:hover.back-to-top {
 		border-radius: 0.25rem;
 		box-shadow: 0 0.25rem 0.375rem 0 rgba(0, 0, 0, 0.03);
 	}
-	
+
 	.navbar-custom.top-nav-collapse .dropdown-menu {
 		border-top: 0.125rem solid rgba(0, 0, 0, 0);
 	}
@@ -2024,7 +2031,7 @@ a:hover.back-to-top {
 		width: 45%;
 		margin-top: 0;
 	}
-	
+
 	.tabs #tab-2 .list-unstyled.first {
 		margin-right: 2rem;
 	}
@@ -2037,7 +2044,7 @@ a:hover.back-to-top {
 		width: 1.375rem;
 		background-size: 1.375rem 2.125rem;
 	}
-	
+
 	.slider .swiper-button-next {
 		right: 1rem;
 		width: 1.375rem;
@@ -2047,11 +2054,11 @@ a:hover.back-to-top {
 
 
 	/* Projects */
-	.filter .element-item { 
-		width: 25%; 
+	.filter .element-item {
+		width: 25%;
 	}
-	
-	.filter .element-item .element-item-overlay { 
+
+	.filter .element-item .element-item-overlay {
 		opacity: 0;
 		transition: opacity 0.3s ease;
 	}
@@ -2068,6 +2075,7 @@ a:hover.back-to-top {
 	}
 
 	.counter #counter .cell {
+    text-align: left;
 	}
 	/* end of about */
 
@@ -2100,7 +2108,7 @@ a:hover.back-to-top {
 
 /* Min-width width 992px */
 @media (min-width: 992px) {
-	
+
 	/* General Styles */
 	.p-heading {
 		width: 65%;
@@ -2132,7 +2140,7 @@ a:hover.back-to-top {
 		background: url('../images/hexagon-white.svg') center center no-repeat;
 		background-size: 1.625rem 1.625rem;
 	}
-	
+
 	.navbar-custom .fa-stack-1x {
 		font-size: 0.6875rem;
 		line-height: 1.625rem;
@@ -2176,7 +2184,7 @@ a:hover.back-to-top {
 		text-align: left;
 		vertical-align: top;
 	}
-	
+
 	.cards-1 div.card:nth-child(3n+2) {
 		margin-right: 2.5rem;
 		margin-left: 2.5rem;
@@ -2202,20 +2210,20 @@ a:hover.back-to-top {
 	.accordion {
 		height: 34.625rem;
 	}
-	
+
 	.accordion .area-1 {
 		width: 50%;
 		height: 100%;
 		display: inline-block;
 	}
-	
+
 	.accordion .area-2 {
 		width: 50%;
 		height: 100%;
 		display: inline-block;
 		vertical-align: top;
 	}
-	
+
 	.accordion .accordion-container {
 		max-width: 88%;
 		margin-left: 2rem;
@@ -2261,7 +2269,7 @@ a:hover.back-to-top {
 
 	/* Call Me */
 	.form-1 {
-		padding-top: 7rem;	
+		padding-top: 7rem;
 	}
 
 	.form-1 .text-container {
@@ -2274,7 +2282,7 @@ a:hover.back-to-top {
 	.lightbox-basic img {
 		margin-bottom: 0;
 	}
-	
+
 	.lightbox-basic h3 {
 		margin-top: 0.375rem;
 	}
@@ -2331,7 +2339,7 @@ a:hover.back-to-top {
 
 /* Min-width width 1200px */
 @media (min-width: 1200px) {
-	
+
 	/* General Styles */
 	.p-heading {
 		width: 55%;
@@ -2351,7 +2359,7 @@ a:hover.back-to-top {
 	}
 	/* end of navigation */
 
-	
+
 	/* Header */
 	.header .header-content {
 		padding-top: 14.75rem;
@@ -2437,7 +2445,7 @@ a:hover.back-to-top {
 		height: 16.875rem;
 	}
 
-	.filter .element-item .element-item-overlay span { 
+	.filter .element-item .element-item-overlay span {
 		top: 45%;
 	}
 	/* end of projects */
@@ -2467,8 +2475,8 @@ a:hover.back-to-top {
 		margin-left: 2rem;
 	}
 	/* end of about */
-	
-	
+
+
 	/* Contact */
 	.form-2 .text-container {
 		margin-top: 0.875rem;
@@ -2505,7 +2513,7 @@ a:hover.back-to-top {
 
 /* Min-width width 1600px */
 @media (min-width: 1600px) {
-	
+
 	/* Navigation */
 	.navbar-custom {
 		padding-right: 12rem;

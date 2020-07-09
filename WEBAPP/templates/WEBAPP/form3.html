@@ -1,0 +1,79 @@
+{% extends "WEBAPP/base.html" %}
+
+{% block content %}
+<div id="newclient" class="form-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">        
+        <div class="text-container">
+          <div class="section-title">Te ayudamos</div>
+          <h2 class="white">1 - 2 - 3</h2>
+          <p class="white">Estas solo a unos pasos de recibir una cotizacion recomendada. Llena el formulario y te contactaremos para.</p>
+          <ul class="list-unstyled li-space-lg white">
+              <li class="media">                                
+                  <div class="media-body"><i class="fas fa-square"></i> Llnea el formulario y te contactaremos.</div>
+              </li>
+              <li class="media">
+                  <div class="media-body"><i class="fas fa-square"></i> Pagas por el servicio</div>
+              </li>
+              <li class="media">
+                  <div class="media-body"><i class="fas fa-square"></i> Recibe tu cotizacion adecuada para ti</div>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <form method='post' id="form-cliente" data-toggle="validator" data-focus="false"">
+          {% csrf_token %}
+
+          <div class="form-group">
+            {{ form3.first_name }}
+            <label class="label-control" for="{{ form3.auto_id }}"> Nombre </label>
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="form-group">
+            {{ form3.last_name }}
+            <label class="label-control" for="{{ form3.auto_id }}"> Apellido </label>
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="form-group">
+            {{ form3.mail }}
+            <label class="label-control" for="{{ form3.auto_id }}"> Email </label>
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="form-group">
+            {{ form3.phone }}
+            <label class="label-control" for="{{ form3.auto_id }}"> Telefono </label>
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="form-group">
+            <select class="form-control-select" id="service" name='pay_method' required>
+                <option class="select-option" value="" disabled selected>Metodo de pago en tienda:</option>
+                <option class="select-option" value="notebooks">Efectivo</option>
+                <option class="select-option" value="pc">Tarjeta de credito</option>
+                <option class="select-option" value="parts">Tarjeta de debito</option>
+                <option class="select-option" value="parts">Transferencia</option>
+            </select>
+            <div class="help-block with-errors"></div>
+          </div>
+          
+
+          <div class="form-group">
+            <button type="submit" name="newclient" value="newclient" class="form-control-submit-button">SIGUIENTE</button>
+          </div>
+
+          <div id="slider-range"></div>
+
+        </form>
+      </div>    
+        
+               
+      </div>
+    
+  </div>
+</div>
+{% endblock %}
