@@ -18,17 +18,6 @@ class NbForm(ModelForm):
         widgets = {
             'necesity': TextInput(attrs={'class': 'form-control-textarea'}),
             }
-
-class PcForm(ModelForm):
-    class Meta:
-        model = Cliente
-        fields = ['necesity']
-
-class UpgradeForm(ModelForm):
-    class Meta:
-        model = Cliente
-        fields = ['necesity']
-
 class ContactForm(ModelForm):
     class Meta:
         model = Cliente
@@ -45,3 +34,4 @@ class AddressForm(ModelForm):
     class Meta:
         model = Contacto
         fields = ['region', 'comuna', 'address']
+

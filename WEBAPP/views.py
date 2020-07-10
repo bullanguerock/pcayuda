@@ -2,8 +2,11 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.http import JsonResponse
 from dashboard.models import Order
 from django.core import serializers
-from .forms import CustomerForm, NbForm, ContactForm
-from .models import Cliente
+from WEBAPP.forms import CustomerForm, NbForm, ContactForm
+from WEBAPP.models import Cliente
+from django.http import HttpResponseRedirect
+from formtools.wizard.views import SessionWizardView
+
 
 # Create your views here.
 def index(request):
@@ -88,3 +91,27 @@ def slider(request):
 
 def test(request):
     return render(request,'WEBAPP/formtest.html')
+
+class ContactWizard(SessionWizardView):
+    def done(self, form_list, **kwargs):
+        return render(self.request, 'WEBAPP/new_client.html', {
+            'form_data': [form.cleaned_data for form in form_list],
+        })
+
+FORMS = [("presupuesto", CustomerForm),
+         ("necesidad", NbForm),
+         ("contacto", ContactForm)]
+
+TEMPLATES = {"presupuesto": "WEBAPP/form1.html",
+             "necesidad": "WEBAPP/form2.html",
+             "contacto": "WEBAPP/form3.html"}
+
+class OrderWizard(SessionWizardView):
+    def get_template_names(self):
+        return [TEMPLATES[self.steps.current]]
+
+    def done(self, form_list, **kwargs):
+        if form_list.is_valid():
+            cliente = form_list.save(commit=False)
+            cliente.save()
+        return HttpResponseRedirect('/newclient/')

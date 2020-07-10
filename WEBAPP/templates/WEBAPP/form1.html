@@ -1,0 +1,132 @@
+{% extends "WEBAPP/base.html" %}
+{% load i18n %}
+{% block content %}
+<div id="newclient" class="form-1">
+  <div id="newclient" class="form-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">        
+          <div class="text-container">
+            <div class="section-title">Te ayudamos</div>
+            <h2 class="white">1 - 2 - 3</h2>
+            <p class="white">Estas solo a unos pasos de recibir una cotizacion recomendada. Llena el formulario y te contactaremos para.</p>
+            <ul class="list-unstyled li-space-lg white">
+                <li class="media">                                
+                    <div class="media-body"><i class="fas fa-square"></i> Llnea el formulario y te contactaremos.</div>
+                </li>
+                <li class="media">
+                    <div class="media-body"><i class="fas fa-square"></i> Pagas por el servicio</div>
+                </li>
+                <li class="media">
+                    <div class="media-body"><i class="fas fa-square"></i> Recibe tu cotizacion adecuada para ti</div>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <p>Step {{ wizard.steps.step1 }} of {{ wizard.steps.count }}</p>
+          <form method='post' id="form-cliente" data-toggle="validator" data-focus="false">
+            {% csrf_token %}
+            <table>
+            {{ wizard.management_form }}
+            {% if wizard.form.forms %}
+                {{ wizard.form.management_form }}
+                {% for form in wizard.form.forms %}
+                    {{ form }}
+                {% endfor %}
+            {% else %}
+                {{ wizard.form }}
+            {% endif %}
+            </table>
+
+            {% if wizard.steps.prev %}
+            <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.first }}">{% trans "first step" %}</button>
+            <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.prev }}">{% trans "prev step" %}</button>
+            {% endif %}
+            <input type="submit" value="{% trans "submit" %}"/>
+
+
+
+
+
+
+
+
+            <!--
+            <div class="form-group">
+              <div class="text-container">
+                <h3 class="white">Presupuesto</h3>
+              </div>
+            </div>
+  
+            
+            <div class="form-group">            
+              <div class="slidecontainer">
+                <input type="text" name="0-presu" id="amount" >                     
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <div id="slider-range"></div>
+            </div>
+  
+            <div class="form-group">
+              <select class="form-control-select" id="id_0-service" name='0-service' required>
+                  <option class="select-option" value="" disabled selected>Quiero que me ayuden con:</option>
+                  <option class="select-option" value="notebooks">Notebooks</option>
+                  <option class="select-option" value="pc">Computadores Escritorio</option>
+                  <option class="select-option" value="parts">Piezas/Componentes</option>
+              </select>
+              <div class="help-block with-errors"></div>
+            </div>
+  
+            
+            
+            <br>
+             
+            <div class="form-group">
+              <button type="submit" name="submit" value="submit" class="form-control-submit-button">SIGUIENTE</button>
+            </div>
+          -->      
+  
+          </form>
+          
+        </div>    
+          
+                 
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  
+{% endblock %}
+
+{% block scripts %}
+<script>
+  var number_format = function(total) {
+    return total.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
+  };
+  
+  $( "#slider-range" ).slider({
+  range: true,
+  min: 0,
+  max: 1000000,
+  values: [ 100000, 400000 ],
+  step: 5000,
+  slide: function( event, ui ) {
+      $( "#amount" ).val( "$" + number_format(ui.values[ 0 ])+ " - $" + number_format(ui.values[ 1 ]) );
+          $('.ui-slider-handle:first').html('<div class="tooltip top slider-tip"><div class="tooltip-arrow"></div><div class="tooltip-inner">' + ui.values[0] + '</div></div>');
+          $('.ui-slider-handle:last').html('<div class="tooltip top slider-tip"><div class="tooltip-arrow"></div><div class="tooltip-inner">' + ui.values[1] + '</div></div>');
+  }
+  });    
+      -
+  $( "#amount" ).val( "$ " + number_format($( "#slider-range" ).slider( "values", 0 )) +
+    " - $ " + number_format($( "#slider-range" ).slider( "values", 1 )));
+
+    
+
+</script>
+{% endblock %}
+ 

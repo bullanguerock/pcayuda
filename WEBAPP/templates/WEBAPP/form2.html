@@ -28,8 +28,10 @@
         <div id="newclient" class="form-1">          
           <form method='post'>
             {% csrf_token %}
+            
             <div class="form-group">
-              {{ form2.necesity }}
+              <textarea name="necesity" class="form-control-textarea" maxlength="300" required="" id="id_necesity"></textarea>
+              
               <label class="label-control" for="{{ form2.auto_id }}">Cuentanos que necesitas... </label>
               <div class="help-block with-errors"></div>
             </div>
