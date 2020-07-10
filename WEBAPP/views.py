@@ -85,3 +85,6 @@ def add_client(request):
 
 def slider(request):  
     return render(request,'WEBAPP/slider.html')
+
+def test(request):
+    return render(request,'WEBAPP/formtest.html')

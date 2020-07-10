@@ -9,11 +9,13 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-container">
-                            <h1>TE AYUDAMOS CON <br><span id="js-rotating">NOTEBOOKS, COMPUTADORES, PIEZAS</span></h1>
-                            <p class="p-heading p-large"> ¿Quieres comprar un computador/notebook pero no sabes nada de aspectos técnicos? <br>
+                            <h1>TE AYUDAMOS CON<br><span id="js-rotating">NOTEBOOKS, COMPUTADORES, PIEZAS</span></h1>
+                            <br>
+                            <p class="p-heading p-large"> ¿Quieres comprar un computador/notebook pero no sabes nada de aspectos técnicos? 
                                 ¡Has llegado al lugar correcto!<br>
                                 Escoge tu presupuesto y cuéntanos tu necesidad. <br>Confía en nosotros y disfruta del mejor equipo al que puedas acceder sin necesidad de conocer los aspectos técnicos de la computación.
                                 </p>
+                            <br>
                             <a class="btn-solid-lg page-scroll" href="#callMe">CONTACTANOS AQUI</a>
                         </div>
                     </div> <!-- end of col -->
@@ -56,6 +58,7 @@
                     <div class="col-lg-12">
                         
                         <!-- Card -->
+                        
                         <!-- <div class="icon-center"> -->
                             <span class="fa-stack">
                                 <span class="hexagon"></span>
@@ -148,7 +151,7 @@
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Notebooks</h3>
-                            <p>Diferencias de precios por el mismo producto en distintas tiendas a lo largo del país.</p>
+                            <p>Diferencias de precios por el mismo producto en distintas tiendas a lo largo del país</p>
                             <br>
                             <p class="price">Hasta <span>$100.000</span> de diferencia por el mismo producto</p>
                         </div>
@@ -199,42 +202,44 @@
     <!-- end of services -->
     
     
-    <div id=#callMe>
+    <div id=callMe>
         <div id="newclient" class="form-1">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">        
                         <div class="text-container">
                             <div class="section-title">Te ayudamos</div>
-                            <h2 class="white">1 - 2 - 3</h2>
-                            <p class="white">Estas solo a unos pasos de recibir una cotizacion recomendada. Llena el formulario y te contactaremos para.</p>
+                            <h2 class="white">1<small> - 2 - 3</small></h2>
+                            <p class="white">Estas solo a unos pasos de recibir una cotizacion recomendada.</p>
                             <ul class="list-unstyled li-space-lg white">
                                 <li class="media">                                
-                                    <div class="media-body"><i class="fas fa-square"></i> Llnea el formulario y te contactaremos.</div>
+                                    <div class="media-body"><i class="fas fa-square"></i> ¡Empecemos!, necesitamos saber tu presupuesto</div>
                                 </li>
                                 <li class="media">
-                                    <div class="media-body"><i class="fas fa-square"></i> Pagas por el servicio</div>
+                                    <div class="media-body"><i class="fas fa-square"></i> Costo del servicio <span>$8.000</span></div>
                                 </li>
                                 <li class="media">
-                                    <div class="media-body"><i class="fas fa-square"></i> Recibe tu cotizacion adecuada para ti</div>
+                                    <div class="media-body"><i class="fas fa-square"></i> Para dudas o consultas el Whatsapp a cotinuación</div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                         
                     <div class="col-lg-6">
+                        
                         <form method='post' id="form-cliente" data-toggle="validator" data-focus="false"">
                             {% csrf_token %}
                 
                             <div class="form-group">
                                 <div class="text-container">
-                                    <h3 class="white">Presupuesto</h3>
+                                    <div class="section-title">Presupuesto</div>
                                 </div>
                                                             
                                 <!--Slider -->
                                 <div class="form-group">            
                                     <div class="slidecontainer">
-                                        <input type="text" name="presu" id="amount" style="border:0; color:#fff; background-color: #153e52; font-weight:bold;"disabled">                     
+                                        <input type="text" name="presu" id="amount" class="text" ></input>
+                                                            
                                     </div>
                                 </div>
                     
@@ -265,9 +270,13 @@
                     </div>                    
                                        
                 </div>
+            </div>
+            <div class="container">
                 <div class="row">
-                    <h2>+56 9 98765432</h2>
-                    <img src="{% static 'images/wasap.png' %}" width="10%" height="10%"> </img>
+                    <div class="col-lg-6">
+                        <h2><img src="{% static 'images/wasap.png' %}" width="10%" height="10%"> +56 9 87345622 </img></h2>
+                        
+                    </div>
                     
                 </div>            
             </div>            
@@ -363,44 +372,7 @@
     <!-- end of testimonials -->
 
  
-    <!-- Team -->
-    <div class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Equipo</h2>
-                    <p> &nbsp; </p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        
-                        <p class="p-large">Pablo Gonzalez</p>
-                        <p class="job-title">Estudiante Ingenieria Comercial</p>
-                        
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        
-                        <p class="p-large">Cristóbal Palacios</p>
-                        <p class="job-title">Estudiante Ingenieria Informatica</p>
-                        
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-                                       
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of team -->
-
-
-    <!-- About -->
+        <!-- About -->
     <div id="about" class="counter">
         <div class="container">
             <div class="row">
