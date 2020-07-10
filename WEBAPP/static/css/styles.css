@@ -196,7 +196,7 @@ body, p {
 
 .p-large {
 	font: 400 1.125rem/1.625rem "Open Sans", sans-serif;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .p-small {
@@ -993,18 +993,27 @@ input[type='checkbox'] {
 .cards-1 {
 	padding-top: 3rem;
 	padding-bottom: 2.875rem;
+	background-color: #153e52;
+	text-align: center;
 }
 
 .cards-1 .card {
 	margin-bottom: 2.5rem;
 	border: none;
-	text-align: center;
-
-}
-
-.card-1 .p {
+	background-color: #153e52;
 	color: #fff;
+
 }
+
+
+.cards-1 .col-lg-13 {
+	margin-bottom: 3rem;
+	border: none;
+	padding-right: 15px;
+  	padding-left: 15px;
+	
+}
+
 
 .cards-1 .icon-center {
 	display: block;
@@ -2321,7 +2330,7 @@ a:hover.back-to-top {
 	.cards-1 .card {
 		display: inline-block;
 		max-width: 17.5rem;
-		text-align: left;
+		text-align: center;
 		vertical-align: top;
 	}
 
