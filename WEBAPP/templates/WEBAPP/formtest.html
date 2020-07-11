@@ -3,11 +3,7 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <br>
 <br>
 
@@ -29,7 +25,52 @@
     <div class="row">
       <div class="col-12 col-lg-8 m-auto">
         <form class="multisteps-form__form" data-toggle="validator" data-focus="false">
-          
+          <!--single form panel-->
+          <div class="multisteps-form__panel shadow p-4 rounded js-active" data-animation="scaleIn">
+            <h3 class="multisteps-form__title">Contacto</h3>
+            <div class="multisteps-form__content">
+              <div class="form-row mt-4">
+                <div class="col-12 col-sm-6">
+                  <input id="first_name" class="form-control-input" type="text" required/>
+                  <label class="label-control" for="first_name"> Nombres </label>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                  <input id="last_name" class="form-control-input" type="text" required/>
+                  <label class="label-control" for="last_name"> Apellidos </label>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-row mt-4">
+                <div class="col-12 col-sm-6">
+                  <input id="mail" class="form-control-input" type="text"/>
+                  <label class="label-control" for="mail"> Email </label>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                  <input id="phone" class="form-control-input" type="text"/>
+                  <label class="label-control" for="phone"> Telefono </label>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-row mt-4">
+                <div class="col-12 col-sm-6">
+                  <select class="form-control-select" id="service" name='pay_method' required>
+                    <option class="select-option" value="" disabled selected>Metodo de pago en tienda:</option>
+                    <option class="select-option" value="efectivo">Efectivo</option>
+                    <option class="select-option" value="credito">Tarjeta de credito</option>
+                    <option class="select-option" value="debito">Tarjeta de debito</option>
+                    <option class="select-option" value="transferencia">Transferencia</option>
+                </select>
+                <div class="help-block with-errors"></div>
+                </div>
+                
+              </div>
+              <div class="button-row d-flex mt-4">
+                <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+              </div>
+            </div>
+          </div>
           <!--single form panel-->
           <div class="multisteps-form__panel shadow p-4 rounded" data-animation="scaleIn">
             <h3 class="multisteps-form__title">Your Address</h3>
@@ -94,54 +135,6 @@
               </div>
             </div>
           </div>
-
-          <!--single form panel-->
-          <div class="multisteps-form__panel shadow p-4 rounded js-active" data-animation="scaleIn">
-            <h3 class="multisteps-form__title">Contacto</h3>
-            <div class="multisteps-form__content">
-              <div class="form-row mt-4">
-                <div class="col-12 col-sm-6">
-                  <input id="first_name" class="form-control-input" type="text"/>
-                  <label class="label-control" for="first_name"> Nombres </label>
-                  <div class="help-block with-errors"></div>
-                </div>
-                <div class="col-12 col-sm-6 mt-4 mt-sm-0">
-                  <input id="last_name" class="form-control-input" type="text"/>
-                  <label class="label-control" for="last_name"> Apellidos </label>
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="form-row mt-4">
-                <div class="col-12 col-sm-6">
-                  <input id="mail" class="form-control-input" type="text"/>
-                  <label class="label-control" for="mail"> Email </label>
-                  <div class="help-block with-errors"></div>
-                </div>
-                <div class="col-12 col-sm-6 mt-4 mt-sm-0">
-                  <input id="phone" class="form-control-input" type="text"/>
-                  <label class="label-control" for="phone"> Telefono </label>
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="form-row mt-4">
-                <div class="col-12 col-sm-6">
-                  <select class="form-control-select" id="service" name='pay_method' required>
-                    <option class="select-option" value="" disabled selected>Metodo de pago en tienda:</option>
-                    <option class="select-option" value="efectivo">Efectivo</option>
-                    <option class="select-option" value="credito">Tarjeta de credito</option>
-                    <option class="select-option" value="debito">Tarjeta de debito</option>
-                    <option class="select-option" value="transferencia">Transferencia</option>
-                </select>
-                <div class="help-block with-errors"></div>
-                </div>
-                
-              </div>
-              <div class="button-row d-flex mt-4">
-                <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
-              </div>
-            </div>
-          </div>
-
           <!--single form panel-->
           <div class="multisteps-form__panel shadow p-4 rounded" data-animation="scaleIn">
             <h3 class="multisteps-form__title">Additional Comments</h3>
@@ -164,22 +157,7 @@
 
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 
 <!--

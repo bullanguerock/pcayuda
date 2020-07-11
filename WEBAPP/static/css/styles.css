@@ -412,15 +412,20 @@ strong {
 
 .form-control-input:focus + .label-control,
 .form-control-input.notEmpty + .label-control,
+.form-control-input1:focus + .label-control,
+.form-control-input1.notEmpty + .label-control,
 .form-control-textarea:focus + .label-control,
 .form-control-textarea.notEmpty + .label-control {
 	top: 0.125rem;
 	opacity: 1;
 	font-size: 0.75rem;
 	font-weight: 500;
+	outline: none;
+	
 }
 
 .form-control-input,
+.form-control-input1,
 .form-control-select {
 	display: block; /* needed for proper display of the label in Firefox, IE, Edge */
 	width: 100%;
@@ -493,6 +498,7 @@ select::-ms-expand {
 }
 
 .form-control-input:focus,
+.form-control-input1:focus,
 .form-control-select:focus,
 .form-control-textarea:focus {
 	border: 1px solid #a1a1a1;
@@ -959,6 +965,7 @@ input[type='checkbox'] {
 .basic-1 {
 	padding-top: 6.5rem;
 	padding-bottom: 3rem;
+	background-color: #fff;
 }
 
 .basic-1 .text-container {
@@ -1021,6 +1028,11 @@ input[type='checkbox'] {
 	border: none;
 	padding-right: 15px;
   	padding-left: 15px;
+	
+}
+
+.cards-1 .pe {
+	text-align: justify;
 	
 }
 
@@ -1470,9 +1482,16 @@ input[type='checkbox'] {
 
 .form-1 .form-control-input,
 .form-1 .form-control-select {
+	border: 1px solid #2a5d77;
+	background-color: #2a5d77;
+	color: #fff;
+}
+
+.form-1 .form-control-input1 {
 	border: 1px solid #39728f;
 	background-color: #2a5d77;
 	color: #fff;
+	width: 70px;
 }
 
 .form-1 .form-control-textarea {
@@ -1488,6 +1507,7 @@ input[type='checkbox'] {
 .form-1 .form-control-textarea:focus,
 .form-1 .form-control-textarea:hover {
 	border: 1px solid #fff;
+	outline: none;
 }
 
 #lmsgSubmit.h3.text-center.tada.animated,
@@ -1811,6 +1831,7 @@ input[type='checkbox'] {
 .counter {
 	padding-top: 6.875rem;
 	padding-bottom: 5.25rem;
+	background-color: #fff;
 }
 
 .counter .image-container {
