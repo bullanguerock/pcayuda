@@ -9,13 +9,13 @@
 	 -database
 	  
 {	}email service
-{       }dashboard
+{django/admin}dashboard
 
 
 
 {	}create a setup thing
-{	}create a deploy thing
-{	}creater a requeriments thing
+{done}create a deploy thing
+{done}creater a requeriments thing
 {	}creater a redame
 {	}creater a license shit
 

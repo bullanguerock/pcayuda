@@ -1457,6 +1457,13 @@ input[type='checkbox'] {
 	text-align: center;
 }
 
+.form-1 .pi {
+	margin-bottom: 1.375rem;
+	color: #fff;
+	text-align: center;
+	font-size: small;
+}
+
 .form-1 .list-unstyled .fas {
 	color: #14bf98;
 	font-size: 0.5rem;
